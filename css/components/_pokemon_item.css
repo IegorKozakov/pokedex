@@ -1,0 +1,125 @@
+.details {
+    margin: 0 0 30px;
+}
+
+.pokemon__item{
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+
+    padding: 0 0 25px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    border: 1px solid #ffcf00;
+    border-radius: 5px;
+    margin: 0 0 15px;
+    box-shadow: 3px 3px 9px;
+
+}
+
+.pokemon__link {
+    display: block;
+    width: 100%;
+    background: rgba(255, 207, 0, 0.1);
+    padding: 0 0 100% 0;
+    background-size: 100%;
+    margin: 0 0 20px;
+    transition: background-size 0.25s;
+    background-position: 50%, 50%;
+}
+
+.pokemon__title {
+    font-size: 25px;
+    font-weight: 600;
+    color: #65016C;
+    margin: 0 0 20px;
+}
+
+.pokemon__types_links {
+    text-align: left;
+}
+
+.pokemon__type_link {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 5px 5px;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: 0.2s;
+    color: black;
+}
+
+.pokemon__type_link.poison {
+    background: #89A100;
+    border-color: #89A100;
+    color: white;
+}
+
+.pokemon__type_link.water{
+    background: #3415B0;
+    border-color: #3415B0;
+    color: white;
+}
+
+.pokemon__type_link.bug{
+    background: #FFCF00;
+    border-color: #FFCF00;
+    color: white;
+}
+
+.pokemon__type_link.flying{
+    background: #6549D7;
+    border-color: #6549D7;
+    color: white;
+}
+
+
+@media (min-width: 600px) {
+    .pokemon__item {
+        width: 48%;
+        margin: 0 1% 2%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .pokemon__item {
+        width: 31.3%;
+    }
+
+    .pokemon__link:hover {
+        background-size: 120%;
+    }
+
+    .pokemon__type_link:hover {
+        color: rgba(0,0,0,0.8);
+    }
+
+    .pokemon__type_link.poison:hover {
+        background: #A5B92E;
+        border-color: #A5B92E;
+        color: white;
+    }
+
+    .pokemon__type_link.water:hover{
+        background: #6549D7;
+        border-color: #6549D7;
+        color: white;
+    }
+
+    .pokemon__type_link.bug:hover{
+        background: #FFDB40;
+        border-color: #FFDB40;
+        color: white;
+    }
+
+    .pokemon__type_link.flying:hover{
+        background: #6549D7;
+        border-color: #6549D7;
+        color: white;
+    }
+}

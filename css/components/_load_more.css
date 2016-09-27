@@ -1,0 +1,13 @@
+.load_more {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+
+    background: #3415B0;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+
+    padding: 15px;
+}

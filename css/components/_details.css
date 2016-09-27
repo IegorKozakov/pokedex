@@ -1,0 +1,53 @@
+.details {
+    width: 40%;
+    float: right;
+    padding: 0 20px 0 10px;
+    box-sizing: border-box;
+}
+.details__inner {
+    border: 1px solid #ffcf00;
+    box-shadow: 3px 3px 9px;
+    border-radius: 5px;
+    padding: 15px;
+    display: none;
+}
+
+.details__inner.started {
+    display: block;
+}
+
+.details__inner:after {
+    content: 'Select your pokemon to get details';
+
+}
+
+.details__inner.loaded:after{
+    display: none;
+}
+
+.details__inner img {
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+}
+
+.details__inner h3 {
+    font-size: 24px;
+    text-align: center;
+    margin: 0 0 25px;
+}
+
+.details__inner table {
+    width: 100%;
+}
+
+.details__inner td {
+    width: 70%;
+    text-align: center;
+    border: 1px solid #000;
+    padding: 10px 5px;
+}
+
+.details__inner tr td:last-child {
+    width: 30%;
+}

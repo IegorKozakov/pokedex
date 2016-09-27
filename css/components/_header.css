@@ -1,0 +1,14 @@
+header {
+    background: #ffcf00;
+
+    padding: 10px;
+
+    font-size: 35px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    text-shadow: 3px 2px 4px;
+    text-align: center;
+
+    margin: 0 0 20px;
+}

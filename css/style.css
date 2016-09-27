@@ -1,0 +1,33 @@
+/*
+* Setting Utils
+*/
+
+@import 'utils/_reset.css';
+@import 'utils/_fonts.css';
+/*
+* Setting Components
+*/
+@import 'components/_header.css';
+@import 'components/_pokemon_item.css';
+@import 'components/_load_more.css';
+@import 'components/_details.css';
+
+html {
+    min-width: 320px;
+}
+
+#page {
+    width: 90%;
+    max-width: 1220px;
+    margin: 0 auto 30px;
+}
+
+.content {
+    float: left;
+    width: 60%;
+    margin: 0 0 30px;
+    padding: 0 10px 0 20px;
+
+    box-sizing: border-box;
+
+}
