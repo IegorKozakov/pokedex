@@ -29,13 +29,12 @@ App.prototype.init = function(){
 App.prototype.loadPokeJSON = function (){
 	var self = this;
 
-	console.log(self.loadingBtn.className.indexOf('loading'));
 	if(self.loadingBtn.className.indexOf('loading') !== -1){
 		return false;
 	}
 
 
-	var url = self.nextPage ? 'http://pokeapi.co' + self.nextPage : 'http://pokeapi.co/api/v1/pokemon/?limit='+
+	var url = self.nextPage ? 'https://pokeapi.co' + self.nextPage : 'https://pokeapi.co/api/v1/pokemon/?limit='+
 		(self.config.countPerPage * self.config.page) +
 		'&offset='+self.config.offset;
 
@@ -87,7 +86,7 @@ App.prototype.renderPokemonItem = function(pokemon){
 	link.dataset.counter = self.counter;
 	self.counter ++;
 
-	link.style.backgroundImage = 'url(http://pokeapi.co/media/img/'+ pokemon.pkdx_id +'.png)';
+	link.style.backgroundImage = 'url(https://pokeapi.co/media/img/'+ pokemon.pkdx_id +'.png)';
 	link.addEventListener('click', function(e){
 		var pokemonData = self.getPokemonDetails(this.dataset.counter, this.href);
 		self.renderPokemonDetails(pokemonData);
@@ -128,7 +127,7 @@ App.prototype.getPokemonDetails = function(position, href){
 	if(data === undefined || data.pkdx_id === id){
 
 
-	var url = 'http://pokeapi.co/api/v1/pokemon/'+id;
+	var url = 'https://pokeapi.co/api/v1/pokemon/'+id;
 
 		IG.ajax({
 			url: url,
@@ -156,7 +155,7 @@ App.prototype.renderPokemonDetails = function(data){
 
 	self.detailsContainer.innerHTML = '';
 
-	image.src = 'http://pokeapi.co/media/img/'+ data.pkdx_id +'.png';
+	image.src = 'https://pokeapi.co/media/img/'+ data.pkdx_id +'.png';
 	title.innerText = data.name + ' #' + getId(data.pkdx_id);
 
 	self.detailsContainer.appendChild(image);
