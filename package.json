@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/IegorKozakov/pokedex/issues"
   },
-  "homepage": "https://github.com/IegorKozakov/pokedex#readme"
+  "homepage": "https://github.com/IegorKozakov/pokedex#readme",
+  "dependencies": {
+    "node-static": "^0.7.8"
+  }
 }
